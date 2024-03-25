@@ -36,6 +36,9 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         setSize(400, 200);
         setLayout(new GridLayout(5, 1));
 
-        
-    }
+        JPanel inputPanel = new JPanel();
+        inputPanel.setLayout(new FlowLayout());
+        add(inputPanel);
+
+            }
 }
