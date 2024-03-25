@@ -54,7 +54,16 @@
         android:layout_marginTop="10dp"
         android:text="Giới tính: Nam"
         android:visibility="gone"/>
-    
+    <TextView
+        android:id="@+id/majorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/genderTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Ngành học: Công nghệ thông tin"
+        android:visibility="gone"/>
 </RelativeLayout>
 
 
