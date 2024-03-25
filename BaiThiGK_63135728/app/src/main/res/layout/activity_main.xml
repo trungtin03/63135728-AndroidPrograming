@@ -39,5 +39,24 @@
             android:textSize="25dp"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation= "horizontal"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Cân nặng:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/et_cannang"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    
 </LinearLayout>
 
