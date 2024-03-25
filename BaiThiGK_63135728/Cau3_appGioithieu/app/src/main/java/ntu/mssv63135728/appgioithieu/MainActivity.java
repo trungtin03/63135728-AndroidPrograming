@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.Button;
 import android.widget.TextView;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     private TextView nameTextView, ageTextView, hobbyTextView, genderTextView, majorTextView;
@@ -24,5 +25,9 @@ public class MainActivity extends AppCompatActivity {
         genderTextView = findViewById(R.id.genderTextView);
         majorTextView = findViewById(R.id.majorTextView);
         Button showInfoButton = findViewById(R.id.showInfoButton);
+        ageTextView.setVisibility(View.GONE);
+        hobbyTextView.setVisibility(View.GONE);
+        genderTextView.setVisibility(View.GONE);
+        majorTextView.setVisibility(View.GONE);
     }
 }
