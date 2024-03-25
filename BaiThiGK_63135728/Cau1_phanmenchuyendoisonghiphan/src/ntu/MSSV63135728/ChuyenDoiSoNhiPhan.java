@@ -30,6 +30,12 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
     private JRadioButton decimalRadioButton;
     private JRadioButton hexadecimalRadioButton;
 
-   
-    
+    public ChuyenDoiSoNhiPhan() {
+        super("chuyen doi so");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 200);
+        setLayout(new GridLayout(5, 1));
+
+        
+    }
 }
