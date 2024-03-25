@@ -68,6 +68,9 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         buttonPanel.setLayout(new FlowLayout());
         add(buttonPanel);
 
+        JButton convertButton = new JButton("Chuyển đổi");
+        buttonPanel.add(convertButton);
+
         
     }
 }
