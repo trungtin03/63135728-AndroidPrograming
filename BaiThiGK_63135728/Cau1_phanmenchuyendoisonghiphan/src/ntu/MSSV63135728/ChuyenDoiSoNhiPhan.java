@@ -94,6 +94,16 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
             }
         });
 
-        
+        JPanel emptyPanel = new JPanel();
+        add(emptyPanel);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+            	ChuyenDoiSoNhiPhan converter = new ChuyenDoiSoNhiPhan();
+                converter.setVisible(true);
+            }
+        });
     }
 }
