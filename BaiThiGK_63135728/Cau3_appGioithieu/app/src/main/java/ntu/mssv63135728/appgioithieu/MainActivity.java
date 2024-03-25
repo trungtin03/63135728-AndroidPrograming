@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Hiện thông tin khi nút được nhấn
-                nameTextView.setText("Tên: Trần Trung Tín"); 
+                nameTextView.setText("Tên: Trần Trung Tín");
                 ageTextView.setVisibility(View.VISIBLE);
                 hobbyTextView.setVisibility(View.VISIBLE);
                 genderTextView.setVisibility(View.VISIBLE);
