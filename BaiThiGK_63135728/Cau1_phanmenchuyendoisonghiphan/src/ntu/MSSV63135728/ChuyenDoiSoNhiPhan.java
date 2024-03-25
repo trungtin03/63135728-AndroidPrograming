@@ -71,6 +71,19 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         JButton convertButton = new JButton("Chuyển đổi");
         buttonPanel.add(convertButton);
 
-        
+        convertButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String input = inputTextField.getText();
+                if (binaryRadioButton.isSelected()) {
+                    try {
+                        int decimal = Integer.parseInt(input, 2);
+                        resultLabel.setText("Result: Thập phân: " + decimal + Integer.toHexString(decimal).toUpperCase());
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(ChuyenDoiSoNhiPhan.this, "số nhị phân không hợp lệ", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                
+        };
+
+            
     }
 }
