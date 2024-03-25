@@ -64,6 +64,14 @@
         android:layout_marginTop="10dp"
         android:text="Ngành học: Công nghệ thông tin"
         android:visibility="gone"/>
+    <Button
+        android:id="@+id/showInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiện thông tin"
+        android:layout_below="@id/majorTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>
 
 
