@@ -29,5 +29,16 @@ public class MainActivity extends AppCompatActivity {
         hobbyTextView.setVisibility(View.GONE);
         genderTextView.setVisibility(View.GONE);
         majorTextView.setVisibility(View.GONE);
+        showInfoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Hiện thông tin khi nút được nhấn
+                nameTextView.setText("Tên: Trần Trung Tín"); 
+                ageTextView.setVisibility(View.VISIBLE);
+                hobbyTextView.setVisibility(View.VISIBLE);
+                genderTextView.setVisibility(View.VISIBLE);
+                majorTextView.setVisibility(View.VISIBLE);
+            }
+        });
     }
 }
