@@ -44,6 +44,16 @@
         android:layout_marginTop="10dp"
         android:text="Sở thích: Chơi Game, bơi lội, đá banh"
         android:visibility="gone"/>
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/hobbyTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Giới tính: Nam"
+        android:visibility="gone"/>
     
 </RelativeLayout>
 
