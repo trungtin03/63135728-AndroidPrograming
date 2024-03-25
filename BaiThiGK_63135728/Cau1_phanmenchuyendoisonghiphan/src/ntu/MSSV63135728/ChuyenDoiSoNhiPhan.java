@@ -81,9 +81,19 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
                     } catch (NumberFormatException ex) {
                         JOptionPane.showMessageDialog(ChuyenDoiSoNhiPhan.this, "số nhị phân không hợp lệ", "Error", JOptionPane.ERROR_MESSAGE);
                     }
-                
-        };
+                } else if (decimalRadioButton.isSelected()) {
+                    try {
+                        int decimal = Integer.parseInt(input);
+                        resultLabel.setText("Result: Nhị phân: " + Integer.toBinaryString(decimal) );
+                    } catch (NumberFormatException ex) {
+                        JOptionPane.showMessageDialog(ChuyenDoiSoNhiPhan.this, "số thập phân không hợp lệ!", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                }  else {
+                    JOptionPane.showMessageDialog(ChuyenDoiSoNhiPhan.this, "Vui lòng chọn ", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
 
-            
+        
     }
 }
