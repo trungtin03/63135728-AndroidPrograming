@@ -47,6 +47,19 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         radioButtonPanel.setLayout(new FlowLayout());
         add(radioButtonPanel);
 
+        binaryRadioButton = new JRadioButton("Số nhị phân");
+        decimalRadioButton = new JRadioButton("Số thập phân");
        
+        ButtonGroup group = new ButtonGroup();
+        group.add(binaryRadioButton);
+        group.add(decimalRadioButton);
+        
+        radioButtonPanel.add(binaryRadioButton);
+        radioButtonPanel.add(decimalRadioButton);
+        
+        JPanel resultPanel = new JPanel();
+        resultPanel.setLayout(new FlowLayout());
+        add(resultPanel);
+
     }
 }
