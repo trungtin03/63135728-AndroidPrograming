@@ -1,4 +1,4 @@
-package ntu.mssv63135728.appgioithieubanthan;
+package ntu.mssv63135728.appgioithieu;
 
 import android.os.Bundle;
 
