@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -69,5 +70,40 @@ public class MainActivity extends AppCompatActivity {
                         txtChiso.setText(String.valueOf(chiso));
                         txtNhanXet.setText("Bạn đang béo phì cấp độ 2");
                     }
+                } else if (rbNu.isChecked()) {
+                    if(chiso < 18.5){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    else if(chiso < 18.5 && chiso <=22.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn có chỉ số BMI bình thường");
+                    }
+                    else if(chiso == 23){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang bị thừa cân");
+                    }
+                    else if(chiso > 23 && chiso <=24.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang ở giai đoạn tiền béo phì/béo phì mức độ thấp");
+                    }
+                    else if(chiso ==40){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 3");
+                    }
+                    else if(chiso >= 25 && chiso <=29.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 1");
+                    }
+                    else if(chiso >=30 && chiso <=39.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 2");
+                    }
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn giới tính!",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }
