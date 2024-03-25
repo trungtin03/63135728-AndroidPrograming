@@ -64,6 +64,10 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         resultLabel = new JLabel("Kết quả:");
         resultPanel.add(resultLabel);
 
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout());
+        add(buttonPanel);
+
         
     }
 }
