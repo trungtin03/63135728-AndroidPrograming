@@ -40,5 +40,13 @@ public class ChuyenDoiSoNhiPhan extends JFrame {
         inputPanel.setLayout(new FlowLayout());
         add(inputPanel);
 
-            }
+        inputTextField = new JTextField(20);
+        inputPanel.add(inputTextField);
+
+        JPanel radioButtonPanel = new JPanel();
+        radioButtonPanel.setLayout(new FlowLayout());
+        add(radioButtonPanel);
+
+       
+    }
 }
