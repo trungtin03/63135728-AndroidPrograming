@@ -1,6 +1,7 @@
 package ntu.mssv63135728.cau2_appbmi;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -33,6 +34,40 @@ public class MainActivity extends AppCompatActivity {
         txtNhanXet = findViewById(R.id.txt_nhanxet);
         txtChiso = findViewById(R.id.txt_ketqua);
         txtNhanXet = findViewById(R.id. txt_nhanxet);
-
+        btnTinhBMI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double  chieucao = Double.parseDouble(etChieuCao.getText().toString())/100;
+                double  cannang = Double.parseDouble(etCanNang.getText().toString());
+                chiso = Math.round((cannang/Math.pow(chieucao,2))*10.0)/10.0;
+                if (rbNam.isChecked()){
+                    if(chiso < 18.5){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    else if(chiso < 18.5 && chiso <=24.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn có chỉ số BMI bình thường");
+                    }
+                    else if(chiso == 25){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang bị thừa cân");
+                    }
+                    else if(chiso > 25 && chiso <=29.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang ở giai đoạn tiền béo phì/béo phì mức độ thấp");
+                    }
+                    else if(chiso ==40){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 3");
+                    }
+                    else if(chiso >= 30 && chiso <=34.5){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 1");
+                    }
+                    else if(chiso >=35 && chiso <=39.9){
+                        txtChiso.setText(String.valueOf(chiso));
+                        txtNhanXet.setText("Bạn đang béo phì cấp độ 2");
+                    }
     }
 }
