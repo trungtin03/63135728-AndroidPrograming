@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void ChuyenManHinh(View v){
-        Intent iManHinhKhac = new Intent(this,SubActivityOne.class );
+        Intent iManHinhKhac = new Intent(this,activity_sub_one.class );
         startActivity(iManHinhKhac);
     }
 }
