@@ -29,7 +29,7 @@
         android:background="#92D562"
         android:backgroundTint="#0F649740"
         android:backgroundTintMode="screen"
-        android:onClick="ChuyenManHinh"
+        android:onClick="QuayVe"
         android:text="Quay lại trang chủ"
         android:textColor="@color/cardview_light_background"
         android:textSize="20sp"
