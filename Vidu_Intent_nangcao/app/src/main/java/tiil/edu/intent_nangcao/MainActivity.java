@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void NhapLieu(View v){
-        Intent intent = new Intent(this, NhapLieuActivity.class);
+        Intent intent = new Intent(this, activity_nhap_lieu.class);
         startActivityForResult(intent, 8000);
     }
     @Override

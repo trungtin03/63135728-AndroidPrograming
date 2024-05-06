@@ -1,4 +1,5 @@
 package tiil.edu.intent_nangcao;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class NhapLieuActivity extends AppCompatActivity {
+public class activity_nhap_lieu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
